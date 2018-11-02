@@ -19,7 +19,7 @@ $ npm install -g documentation-feedback-cli
 $ bdf  COMMAND
 running command...
 $ bdf  (-v|--version|version)
-documentation-feedback-cli/0.1.0 darwin-x64 node-v11.0.0
+documentation-feedback-cli/0.2.0 darwin-x64 node-v11.0.0
 $ bdf  --help [COMMAND]
 USAGE
   $ bdf  COMMAND
@@ -67,7 +67,7 @@ OPTIONS
   -h, --help        show CLI help
 ```
 
-_See code: [src/commands/latest.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/latest.ts)_
+_See code: [src/commands/latest.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.2.0/src/commands/latest.ts)_
 
 ## `bdf  responses [PATH]`
 
@@ -81,7 +81,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/responses.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/responses.ts)_
+_See code: [src/commands/responses.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.2.0/src/commands/responses.ts)_
 
 ## `bdf  setup ACCESS_TOKEN`
 
@@ -95,7 +95,7 @@ ARGUMENTS
   ACCESS_TOKEN  the API access token
 ```
 
-_See code: [src/commands/setup.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/setup.ts)_
+_See code: [src/commands/setup.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.2.0/src/commands/setup.ts)_
 
 ## `bdf  stats`
 
@@ -109,5 +109,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/stats.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/stats.ts)_
+_See code: [src/commands/stats.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.2.0/src/commands/stats.ts)_
 <!-- commandsstop -->
