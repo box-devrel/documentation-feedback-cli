@@ -28,29 +28,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`bdf  hello [FILE]`](#bdf-hello-file)
 * [`bdf  help [COMMAND]`](#bdf-help-command)
-* [`bdf  stats [FILE]`](#bdf-stats-file)
-
-## `bdf  hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ bdf  hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ bdf  hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/hello.ts)_
+* [`bdf  latest [AMOUNT]`](#bdf-latest-amount)
+* [`bdf  responses [PATH]`](#bdf-responses-path)
+* [`bdf  setup ACCESS_TOKEN`](#bdf-setup-access-token)
+* [`bdf  stats`](#bdf-stats)
 
 ## `bdf  help [COMMAND]`
 
@@ -69,18 +51,62 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
-## `bdf  stats [FILE]`
+## `bdf  latest [AMOUNT]`
 
-describe the command here
+Prints the latest responses
 
 ```
 USAGE
-  $ bdf  stats [FILE]
+  $ bdf  latest [AMOUNT]
+
+ARGUMENTS
+  AMOUNT  [default: 5] the number of responses to fetch
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -N, --with-notes  Only show messages with notes
+  -h, --help        show CLI help
+```
+
+_See code: [src/commands/latest.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/latest.ts)_
+
+## `bdf  responses [PATH]`
+
+Prints the responses for an endpoint
+
+```
+USAGE
+  $ bdf  responses [PATH]
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/responses.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/responses.ts)_
+
+## `bdf  setup ACCESS_TOKEN`
+
+Sets up the auth token for this CLI
+
+```
+USAGE
+  $ bdf  setup ACCESS_TOKEN
+
+ARGUMENTS
+  ACCESS_TOKEN  the API access token
+```
+
+_See code: [src/commands/setup.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/setup.ts)_
+
+## `bdf  stats`
+
+Prints some basic stats for our survey
+
+```
+USAGE
+  $ bdf  stats
+
+OPTIONS
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/stats.ts](https://github.com/box-devrel/documentation-feedback-cli/blob/v0.1.0/src/commands/stats.ts)_
