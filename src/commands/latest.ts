@@ -16,7 +16,8 @@ export default class Latest extends Command {
       name: 'amount',
       required: false,
       description: 'the number of responses to fetch',
-      default: 5,
+      default: "5",
+      
     }
   ]
 

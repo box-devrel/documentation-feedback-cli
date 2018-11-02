@@ -8,7 +8,7 @@ import client from '../utils/client'
  * @param page by default starts at page 0
  * @param perPage by default does 100 responses per page
  */
-let fetchAllResponses = async (command: Command, responses = [], sortOrder = 'ASC', page = 1, perPage = 100, limit = null): Promise<Array<object>> => {
+let fetchAllResponses = async (command: Command, responses = [], sortOrder = 'ASC', page = 1, perPage = 100, limit = 100000): Promise<Array<object>> => {
   // Let's start with a response object
   let response
 
@@ -24,9 +24,11 @@ let fetchAllResponses = async (command: Command, responses = [], sortOrder = 'AS
 
   // Return all responses if we reached the end
   if (responses.length >= response.data.total) { return responses }
-  if (limit != null && responses.length >= limit) { return responses }
+  if (responses.length >= limit) {
+    return responses
+  }
   // otherwise fetch the next command
-  return fetchAllResponses(command, responses, page + 1, perPage)
+  return fetchAllResponses(command, responses, sortOrder, page + 1, perPage)
 }
 
 let uniqueResponses = (responses: Array<any>) => {

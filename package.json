@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Cristiano Betta @cbetta",
   "bin": {
-    "bdf ": "./bin/run"
+    "bdf": "./bin/run"
   },
   "bugs": "https://github.com/box-devrel/documentation-feedback-cli/issues",
   "dependencies": {
