@@ -42,6 +42,8 @@ export default class Stats extends Command {
 
   statsFor(feedback: Array<any>): Array<Object> {
     let stats = feedback.reduce((accumulator: any, entry: any) => {
+      entry.path = entry.path.split('#')[0]
+      entry.path = entry.path.split('?')[0]
       accumulator[entry.path] = accumulator[entry.path] || {
         positive: 0,
         negative: 0,
