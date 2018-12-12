@@ -1,7 +1,7 @@
 {
   "name": "documentation-feedback-cli",
   "description": "Box Documentation Feedback CLI for pulling data from SurveyMonkey",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Cristiano Betta @cbetta",
   "bin": {
     "bdf": "./bin/run"
